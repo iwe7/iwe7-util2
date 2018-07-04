@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, isDevMode } from '@angular/core';
 import { Observable } from 'rxjs';
 export interface Iwe7Response<T> {
-  code: string;
+  code: number;
   msg: string;
   data: T;
 }
