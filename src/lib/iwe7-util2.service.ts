@@ -19,6 +19,14 @@ export class Iwe7Util2Service {
     this.m = m;
   }
 
+  get wupload() {
+    let url = '.';
+    if (isDevMode()) {
+      url = 'http://test.meepo.com.cn/web';
+    }
+    return `${url}/index.php?c=utility&a=file&do=upload`;
+  }
+
   wurl(m: string, mdo: string): string {
     let url = '.';
     if (isDevMode()) {
